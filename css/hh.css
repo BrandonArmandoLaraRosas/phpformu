@@ -1,0 +1,42 @@
+body{
+    background-color: bisque;
+    color: brown;
+    flex-direction: column;
+    
+    
+}
+#unico{
+    color: red;
+    font-weight: bold;
+}
+div{
+   border:3xp solid black;
+}
+.subtitulo{
+    font-style: italic;
+    color:cornflowerblue;
+}
+p{
+    text-anchor: end;
+}
+p:hover{
+    font-weight: bold;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+input:valid{
+    background-color: darkgreen;
+}
+input:invalid{
+    background-color: red;
+}

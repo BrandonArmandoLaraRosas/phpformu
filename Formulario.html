@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="./css/hh.css">
+    <script src="./js/formu.js"></script>
+</head>
+<body>
+    <div>
+        <fieldset>
+        <div class="header">
+        <h1>Registro de Usuario</h1>
+    </fieldset>
+    </div>
+    <h2>New user</h2>
+    <form action="./php/respuesta1.php" method="post">
+    <fieldset>
+        <legend>New user...</legend>
+        <table>
+            <tr>
+                <td><label for="nombre">nombre:</label></td>
+                <td><input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required minlength="10" p></label></td>
+            </tr>
+            <tr>
+                <td><label for="user">Usuario:</label></td>
+                <td><input type="text" name="user" id="user" placeholder="Usuario" required minlength="5" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</td>
+                <td><input type="password" name="pass" id="pass" placeholder="password" required minlength="8" maxlength="10"></td>
+
+            </tr>
+            <tr>
+                <td><label for="Confir">Confirmar Password</td>
+                <td><input type="password" name="pass2" id="pass2" placeholder="Confirmar Password" required minlength="8" maxlength="10"></td>
+            </tr>
+            <p>
+
+                
+            </p>
+            <tr>
+                <td><label for="email">correo:</td>
+                <td><input type="email" name="email" id="email" placeholder="correo..." required></td>
+            </tr>
+            <tr>
+                <td><label for="tel">telefono:</td>
+                <td><input type="tel" name="tel" id="tel" placeholder="Telefono" required minlength="10" maxlength="10"></td>
+
+            </tr>
+            <tr>
+                <td><label for="sex">Genero:</td>
+                <td><select name="sex" id="sex">
+                    <option value="M">Masculino</option>
+                    <option value="F">femenino</option>
+                    <option value="X">otre</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fchnac">Fecha de Nacimiento</td>
+                <td><input type="date" name="fchnac" required></td>
+
+            </tr>
+        </table>
+        </table>
+        <td><input type="submit" value="Enviar"></td>
+    </fieldset>
+</form>
+</body>
+</html>
